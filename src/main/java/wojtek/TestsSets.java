@@ -7,7 +7,7 @@ import java.util.Queue;
  * @author Wojciech Okoński
  *         created on 09.03.2016 r.
  */
-public class TestsSets {
+class TestsSets {
     private static Queue<Process> queue = new PriorityQueue<>(new ProcessComparator());
 
     private static Process p0 = new Process(0, 8),
@@ -36,27 +36,27 @@ public class TestsSets {
         return queue;
     }
 
-    public static Queue<Process> testSet1() throws CloneNotSupportedException {
+    static Queue<Process> testSet1() throws CloneNotSupportedException {
         return template(p0, p1, p2, p3);
     }
 
-    public static Queue<Process> testSet2() throws CloneNotSupportedException {
+    static Queue<Process> testSet2() throws CloneNotSupportedException {
         return template(p0, p5, p6, p3);
     }
 
-    public static Queue<Process> testSet3() throws CloneNotSupportedException {
+    static Queue<Process> testSet3() throws CloneNotSupportedException {
         return template(p8, p9, p10, p11, p0);
     }
 
-    public static Queue<Process> testSet4() throws CloneNotSupportedException {
+    static Queue<Process> testSet4() throws CloneNotSupportedException {
         return template(p13, p14);
     }
 
-    public static Queue<Process> testSet5() throws CloneNotSupportedException {
+    static Queue<Process> testSet5() throws CloneNotSupportedException {
         return template(p15, p13, p13);
     }
 
-    public static Queue<Process> testSet6() throws CloneNotSupportedException {
+    static Queue<Process> testSet6() throws CloneNotSupportedException {
         return template(p0, p19, p20, p21);
     }
 }

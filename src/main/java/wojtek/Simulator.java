@@ -7,13 +7,13 @@ import java.util.Queue;
  * @author Wojciech Okoński
  *         created on 05.03.2016 r.
  */
-public class Simulator {
+class Simulator {
     private int numberOfQueues;
     private int numberOfProcessesInEachQueue;
     private int version = 1;
     private Queue<Process> queue = new PriorityQueue<>(new ProcessComparator());
 
-    public Simulator(int numberOfQueues, int numberOfProcessesInEachQueue, int version) throws CloneNotSupportedException {
+    Simulator(int numberOfQueues, int numberOfProcessesInEachQueue, int version) throws CloneNotSupportedException {
         this.numberOfQueues = numberOfQueues;
         this.numberOfProcessesInEachQueue = numberOfProcessesInEachQueue;
         this.version = version;

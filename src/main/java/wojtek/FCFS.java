@@ -6,9 +6,9 @@ import java.util.Queue;
  * @author Wojciech Okoński
  *         created on 09.03.2016 r.
  */
-public class FCFS extends Algorithm {
+class FCFS extends Algorithm {
 
-    public FCFS(Queue<Process> queue) throws CloneNotSupportedException {
+    FCFS(Queue<Process> queue) throws CloneNotSupportedException {
         super(queue);
     }
 

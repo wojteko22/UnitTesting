@@ -11,6 +11,5 @@ public class Main {
         new Simulator(20, 50, 2);
         new Simulator(20, 50, 4);
         new Simulator(20, 50, 5);
-
     }
 }

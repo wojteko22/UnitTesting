@@ -7,9 +7,9 @@ import java.util.Queue;
  * @author Wojciech Okoński
  *         created on 09.03.2016 r.
  */
-public class SJF extends Algorithm {
+class SJF extends Algorithm {
 
-    public SJF(Queue<Process> queue) throws CloneNotSupportedException {
+    SJF(Queue<Process> queue) throws CloneNotSupportedException {
         super(queue);
     }
 

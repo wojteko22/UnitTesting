@@ -7,11 +7,11 @@ import java.util.Queue;
  * @author Wojciech Okoński
  *         created on 16.03.2016 r.
  */
-public abstract class Algorithm {
+abstract class Algorithm {
     protected Queue<Process> queue = new PriorityQueue<>(new ProcessComparator());
-    protected int numberOfProcesses;
+    int numberOfProcesses;
 
-    public Algorithm(Queue<Process> queue) throws CloneNotSupportedException {
+    Algorithm(Queue<Process> queue) throws CloneNotSupportedException {
         for (Process process : queue) {
             this.queue.offer(process.clone());
         }

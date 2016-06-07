@@ -9,14 +9,14 @@ import java.util.TreeSet;
  * @author Wojciech Okoński
  *         created on 09.03.2016 r.
  */
-public class RR extends Algorithm {
+class RR extends Algorithm {
     private int quantum;
 
-    public RR(Queue<Process> queue, int quantumPercentage) throws CloneNotSupportedException {
+    RR(Queue<Process> queue, int quantumPercentage) throws CloneNotSupportedException {
         this(queue, quantumPercentage, true);
     }
 
-    public RR(Queue<Process> queue, int quantum, boolean quantumIsPercentage) throws CloneNotSupportedException {
+    RR(Queue<Process> queue, int quantum, boolean quantumIsPercentage) throws CloneNotSupportedException {
         super(queue);
         if (quantumIsPercentage) {
             this.quantum = Math.round(getAverageLength() * quantum / 100);
@@ -25,7 +25,7 @@ public class RR extends Algorithm {
         }
     }
 
-    public float getAverageLength() {
+    private float getAverageLength() {
         int sumOfLength = 0;
         for (Process p : queue) {
             sumOfLength += p.getLength();

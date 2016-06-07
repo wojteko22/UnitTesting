@@ -64,19 +64,19 @@ public class Process implements Cloneable {
         return length;
     }
 
-    public int getTimeOfEntry() {
+    int getTimeOfEntry() {
         return timeOfEntry;
     }
 
-    public int getNumber() {
+    int getNumber() {
         return number;
     }
 
-    public void lessQuantumOfTime(int quantum) {
+    void lessQuantumOfTime(int quantum) {
         length -= quantum;
     }
 
-    public void setTimeOfEntry(int timeOfEntry) {
+    void setTimeOfEntry(int timeOfEntry) {
         this.timeOfEntry = timeOfEntry;
     }
 
