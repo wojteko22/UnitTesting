@@ -1,4 +1,4 @@
-package Lista_1;
+package dawid;
 
 import java.util.PriorityQueue;
 
@@ -6,9 +6,9 @@ import java.util.PriorityQueue;
  * Created by Dawid on 2016-03-09.
  */
 
-public class FCFS extends SchedulingAlgorithms {
+class FCFS extends SchedulingAlgorithms {
 
-    public FCFS(PriorityQueue<Proces> queue) throws CloneNotSupportedException {
+    FCFS(PriorityQueue<Proces> queue) throws CloneNotSupportedException {
         super(queue);
     }
 
