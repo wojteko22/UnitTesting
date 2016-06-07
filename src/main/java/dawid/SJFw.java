@@ -1,16 +1,16 @@
-package Lista_1;
+package dawid;
 
 import java.util.PriorityQueue;
 
 /**
  * Created by Dawid on 2016-03-10.
  */
-public class SJFw extends SchedulingAlgorithms {
-    private PriorityQueue<Proces> ready =new PriorityQueue<>(new DurationComparator());
-//    pole reprezentujace czas do przyjecia nastepnego gotowego procesu
-    private int toNextReady=0;
+class SJFw extends SchedulingAlgorithms {
+    private PriorityQueue<Proces> ready = new PriorityQueue<>(new DurationComparator());
+    //    pole reprezentujace czas do przyjecia nastepnego gotowego procesu
+    private int toNextReady = 0;
 
-    public SJFw(PriorityQueue<Proces> queue) throws CloneNotSupportedException {
+    SJFw(PriorityQueue<Proces> queue) throws CloneNotSupportedException {
         super(queue);
     }
 
@@ -22,32 +22,31 @@ public class SJFw extends SchedulingAlgorithms {
     Jezeli do czasu pojawienia sie nastepnego procesy zdarzy wykonac kilka procesow wykonujemy kilka najkrotszych
     * */
     @Override
-    public double symulation(){
+    public double symulation() {
 
-        while (!queue.isEmpty() || !ready.isEmpty()){
+        while (!queue.isEmpty() || !ready.isEmpty()) {
             fillReady();
-            boolean checkNext=false;
-            while(!checkNext && !ready.isEmpty()) {
-                Proces proces=ready.poll();
-                if (toNextReady-proces.getDuration()>=0 || queue.isEmpty()) {
+            boolean checkNext = false;
+            while (!checkNext && !ready.isEmpty()) {
+                Proces proces = ready.poll();
+                if (toNextReady - proces.getDuration() >= 0 || queue.isEmpty()) {
                     sumaryTime += proces.getDuration();
                     averageWaitingTime += (sumaryTime - proces.getLength() - proces.getPrepering());
-                    toNextReady -=proces.getDuration();
-                }
-                else {
+                    toNextReady -= proces.getDuration();
+                } else {
                     proces.reduceDuration(toNextReady);
                     ready.offer(proces);
                     sumaryTime += toNextReady;
-                    checkNext=true;
-                    toNextReady=0;
+                    checkNext = true;
+                    toNextReady = 0;
                 }
             }
         }
-        return averageWaitingTime/queueSize;
+        return averageWaitingTime / queueSize;
     }
 
-//  Metoda uzupelniajaca kolejke procesow gotowych
-    public void fillReady(){
+    //  Metoda uzupelniajaca kolejke procesow gotowych
+    private void fillReady() {
         if (ready.isEmpty())
             sumaryTime = queue.peek().getPrepering();
 
@@ -55,6 +54,6 @@ public class SJFw extends SchedulingAlgorithms {
             ready.offer(queue.poll());
 
         if (!queue.isEmpty())
-            toNextReady=queue.peek().getPrepering()-sumaryTime;
+            toNextReady = queue.peek().getPrepering() - sumaryTime;
     }
 }

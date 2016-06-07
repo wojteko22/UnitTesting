@@ -1,4 +1,4 @@
-package Lista_1;
+package dawid;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ import java.util.Random;
     dla pozostalych 20 procent procesow z przedzialu od 100 do 1000
     */
 
-public class Proces implements Comparable<Proces>, Cloneable {
+class Proces implements Comparable<Proces>, Cloneable {
     private static int cout=1;
     private final Integer id=cout++;
     private final int length;
@@ -31,7 +31,7 @@ public class Proces implements Comparable<Proces>, Cloneable {
         preparTime=readyTime;
     }
 
-    public Proces(){
+    Proces(){
         readyTime = new Random().nextInt(100);
         if (new Random().nextInt(100) < 80)
             duration = new Random().nextInt(90) + 10;
@@ -41,7 +41,7 @@ public class Proces implements Comparable<Proces>, Cloneable {
         preparTime=readyTime;
     }
 
-    public int getId() {
+    int getId() {
         return id;
     }
 
@@ -49,23 +49,23 @@ public class Proces implements Comparable<Proces>, Cloneable {
         return length;
     }
 
-    public int getPrepering() {
+    int getPrepering() {
         return preparTime;
     }
 
-    public int getDuration() {
+    int getDuration() {
         return duration;
     }
 
-    public void reduceDuration(int time){
+    void reduceDuration(int time){
         duration-=time;
     }
 
-    public int getReadyTime() {
+    int getReadyTime() {
         return readyTime;
     }
 
-    public void setReadyTime(Integer readyTime) {
+    void setReadyTime(Integer readyTime) {
         this.readyTime = readyTime;
     }
 

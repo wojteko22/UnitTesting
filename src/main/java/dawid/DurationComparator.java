@@ -1,11 +1,11 @@
-package Lista_1;
+package dawid;
 
 import java.util.Comparator;
 
 /**
  * Created by Dawid on 2016-03-10.
  */
-public class DurationComparator implements Comparator<Proces>{
+class DurationComparator implements Comparator<Proces>{
     @Override
     public int compare(Proces o1, Proces o2) {
         int result=o1.getDuration()-o2.getDuration();
