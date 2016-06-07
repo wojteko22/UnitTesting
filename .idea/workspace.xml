@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25422ebe-fa34-49bb-8e0d-584d1b225f89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Examples/LogAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Examples/LogAnalyzerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="unit-testing.iws" />
@@ -1059,7 +1057,7 @@
       <updated>1465320618422</updated>
       <workItem from="1465320622831" duration="148000" />
       <workItem from="1465321299311" duration="2064000" />
-      <workItem from="1465324418904" duration="4605000" />
+      <workItem from="1465324418904" duration="5149000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1465321479198</created>
@@ -1073,7 +1071,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465322120106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pierwszy test">
+      <created>1465332667067</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1465332667067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1109,7 +1113,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6817000" />
+    <option name="totallyTimeSpent" value="7361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="735" extended-state="0" />
@@ -1149,7 +1153,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="to jest lista1" />
-    <option name="LAST_COMMIT_MESSAGE" value="to jest lista1" />
+    <MESSAGE value="pierwszy test" />
+    <option name="LAST_COMMIT_MESSAGE" value="pierwszy test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
