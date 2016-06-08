@@ -2,7 +2,7 @@ package examples.szwy;
 
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
@@ -16,6 +16,9 @@ public class SetterInjectionTest {
         myFakeManager.willBeValid = true;
         SetterInjection log = new SetterInjection();
         log.setManager(myFakeManager);
-        assertThat(log.isValidLogFileName("nibyMaBycDobre.ese"), is(true));
+
+        boolean result = log.isValidLogFileName("nibyMaBycDobre.ese");
+
+        assertThat(result, is(true));
     }
 }

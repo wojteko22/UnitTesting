@@ -1,9 +1,7 @@
 package examples.szwy;
 
-
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -13,12 +11,13 @@ import static org.junit.Assert.assertThat;
 public class ConstructorInjectionTest {
 
     @Test
-    public void testIsValidLogFileName_NameSupportedExpresion_ReturnsTrue() throws Exception {
+    public void testIsValidLogFileName_NameSupportedExtension_ReturnsTrue() throws Exception {
         FakeExtensionManager myFakeManager = new FakeExtensionManager();
         myFakeManager.willBeValid = true;
         ConstructorInjection log = new ConstructorInjection(myFakeManager);
+
         boolean result = log.isValidLogFileName("short.ext");
-        assertTrue(result);
-        assertThat(log.isValidLogFileName("short.ext"), is(true));
+
+        assertThat(result, is(true));
     }
 }
