@@ -8,7 +8,7 @@ class LogAnalyzer4 {
     private IEmailService email;
 
     LogAnalyzer4(IWebService service, IEmailService email) {
-        this.email=email;
+        this.email = email;
         this.service = service;
     }
 
@@ -16,9 +16,8 @@ class LogAnalyzer4 {
         if (fileName.length() < 8) {
             try {
                 service.LogError("File name is too short: " + fileName);
-            }
-            catch (Exception e){
-                email.sendEmail("someone@somewhere.com","Brak mozliwosci rejestracji",e.getMessage());
+            } catch (Exception e) {
+                email.sendEmail("someone@somewhere.com", "Brak mozliwosci rejestracji", e.getMessage());
             }
         }
     }
