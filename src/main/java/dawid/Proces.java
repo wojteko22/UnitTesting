@@ -3,7 +3,7 @@ package dawid;
 import java.util.Random;
 
 /**
- * Created by Dawid on 2016-03-05.
+ * @author Dawid on 2016-03-05.
  */
 
 /*Klas prece istancje tej klasy w sumulacjach uzywal bede jako

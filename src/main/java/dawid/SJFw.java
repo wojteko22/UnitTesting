@@ -3,7 +3,7 @@ package dawid;
 import java.util.PriorityQueue;
 
 /**
- * Created by Dawid on 2016-03-10.
+ * @author Dawid on 2016-03-10.
  */
 class SJFw extends SchedulingAlgorithms {
     private PriorityQueue<Proces> ready = new PriorityQueue<>(new DurationComparator());
