@@ -41,9 +41,9 @@ public class IFileNameRulesTest {
     @Test
     public void Returns_ArgAny_Throws() throws Exception{
         IFileNameRules fakeRules = mock(IFileNameRules.class);
-        when(fakeRules.isValidLogFileName(anyString())).thenThrow(new RuntimeException("fake exception"));
+        when(fakeRules.isValidLogFileName(anyString())).thenThrow(new Exception("fake exception"));
 
-        thrown.expect(RuntimeException.class);
+        thrown.expect(Exception.class);
         thrown.expectMessage("fake exception");
         fakeRules.isValidLogFileName("anything");
     }
