@@ -8,7 +8,7 @@ import java.util.Random;
 class FileExtensionManager implements IExtensionManager {
     @Override
     public boolean isValid(String fileName) {
-        // Sprawdza na podstawie jakigos zewnetrznego pliku poprawnosc
+        // Sprawdza na podstawie jakiegos zewnetrznego pliku poprawnosc,
         // wiec nie wiemy co zwroci nam ta metoda
         return new Random().nextBoolean();
     }
