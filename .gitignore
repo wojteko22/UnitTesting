@@ -1,2 +1,6 @@
 # User-specific stuff:
 .idea/workspace.xml
+build/
+out/
+src/main/resources/
+src/test/resources/
