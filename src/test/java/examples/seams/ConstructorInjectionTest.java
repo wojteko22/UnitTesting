@@ -11,7 +11,7 @@ import static org.junit.Assert.assertThat;
 public class ConstructorInjectionTest {
 
     @Test
-    public void testIsValidLogFileName_NameSupportedExtension_ReturnsTrue() throws Exception {
+    public void isValidLogFileName_NameSupportedExtension_ReturnsTrue() throws Exception {
         FakeExtensionManager myFakeManager = new FakeExtensionManager();
         myFakeManager.willBeValid = true;
         ConstructorInjection log = new ConstructorInjection(myFakeManager);

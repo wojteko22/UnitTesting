@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class UsingObjectFactoryTest {
 
     @Test
-    public void testIsValidLogFileName_SupportedEstension_ReturnsTrue() throws Exception {
+    public void isValidLogFileName_SupportedExtension_ReturnsTrue() throws Exception {
         FakeExtensionManager manager = new FakeExtensionManager();
         manager.willBeValid = true;
         ObjectFactory.setManager(manager);

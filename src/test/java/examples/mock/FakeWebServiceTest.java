@@ -11,13 +11,14 @@ import static org.junit.Assert.*;
 public class FakeWebServiceTest {
 
     @Test
-    public void analyze_TooShortFileName_CallsWebService(){
-        FakeWebService mockService=new FakeWebService();
-        LogAnalyzer4 log=new LogAnalyzer4(mockService);
-        String shortFileName="abc.ext";
+    public void analyze_TooShortFileName_CallsWebService() {
+        FakeWebService mockService = new FakeWebService();
+        LogAnalyzer4 log = new LogAnalyzer4(mockService);
+        String shortFileName = "abc.ext";
 
         log.analyze(shortFileName);
-        assertThat(mockService.lastError,is("Nazwa pliku jest zbyt krotka:abc.ext"));
+
+        assertThat(mockService.lastError, is("Nazwa pliku jest zbyt krotka:abc.ext"));
     }
 
 }

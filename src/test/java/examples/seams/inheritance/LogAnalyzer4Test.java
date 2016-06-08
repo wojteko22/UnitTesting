@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class LogAnalyzer4Test {
 
     @Test
-    public void testIsVirtualLogFileName() throws Exception {
+    public void overrideTest() throws Exception {
         FakeExtensionManager stub = new FakeExtensionManager();
         stub.willBeValid = true;
         TestableLogAnalyzer3 log = new TestableLogAnalyzer3(stub);
