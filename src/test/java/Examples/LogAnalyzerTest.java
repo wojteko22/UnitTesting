@@ -1,4 +1,4 @@
-package Examples;
+package examples;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,9 +8,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
 import java.util.Collection;
-
-import static org.junit.Assert.*;
-
+// TODO: 08.06.2016 Zmienić ten template. 
 /**
  * Created by Dawid on 2016-06-07.
  */
