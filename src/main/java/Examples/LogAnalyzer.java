@@ -18,7 +18,7 @@ class LogAnalyzer {
         return true;
     }
 
-    boolean isWasLastFileNameValid() {
+    boolean getWasLastFileNameValid() {
         return wasLastFileNameValid;
     }
 

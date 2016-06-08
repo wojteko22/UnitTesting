@@ -32,7 +32,7 @@ public class LogAnalyzerTest {
         LogAnalyzer la = new LogAnalyzer();
         la.isValidLogFileName(fileName);
 
-        boolean result = la.isWasLastFileNameValid();
+        boolean result = la.getWasLastFileNameValid();
 
         assertThat(result, is(expected));
     }

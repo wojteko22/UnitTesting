@@ -2,7 +2,7 @@ package examples.mock;
 
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 /**
@@ -18,7 +18,6 @@ public class FakeWebServiceTest {
 
         log.analyze(shortFileName);
 
-        assertThat(mockService.lastError, is("Nazwa pliku jest zbyt krotka:abc.ext"));
+        assertThat(mockService.lastError, containsString("File name is too short: abc.ext"));
     }
-
 }
