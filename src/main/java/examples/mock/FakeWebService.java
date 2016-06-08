@@ -3,8 +3,8 @@ package examples.mock;
 /**
  * @author Dawid on 2016-06-08.
  */
-public class FakeWebService implements IWebService {
-    public String lastError;
+class FakeWebService implements IWebService {
+    String lastError;
 
     @Override
     public void LogError(String message) {

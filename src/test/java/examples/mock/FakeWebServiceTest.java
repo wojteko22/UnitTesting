@@ -13,7 +13,7 @@ public class FakeWebServiceTest {
     @Test
     public void analyze_TooShortFileName_CallsWebService(){
         FakeWebService mockService=new FakeWebService();
-        LogAnalyzer3 log=new LogAnalyzer3(mockService);
+        LogAnalyzer4 log=new LogAnalyzer4(mockService);
         String shortFileName="abc.ext";
 
         log.analyze(shortFileName);

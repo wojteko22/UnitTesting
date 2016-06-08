@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * @author Dawid on 2016-06-08.
  */
-public class LogAnalyzer3Test {
+public class LogAnalyzer4Test {
 
     @Test
     public void testIsVirtualLogFileName() throws Exception {
