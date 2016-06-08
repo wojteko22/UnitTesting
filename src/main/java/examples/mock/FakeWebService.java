@@ -4,10 +4,12 @@ package examples.mock;
  * @author Dawid on 2016-06-08.
  */
 class FakeWebService implements IWebService {
-    String lastError;
+    Exception toThrow;
 
     @Override
-    public void LogError(String message) {
-        lastError = message;
+    public void LogError(String message) throws Exception {
+        if (toThrow!=null){
+            throw toThrow;
+        }
     }
 }

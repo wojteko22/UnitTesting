@@ -4,5 +4,5 @@ package examples.mock;
  * @author Dawid on 2016-06-08.
  */
 interface IWebService {
-    void LogError(String message);
+    void LogError(String message) throws Exception;
 }
