@@ -11,11 +11,11 @@ public class PrzyPomocyFabrykiTest {
 
     @Test
     public void testIsValidLogFileName_SupportedEstension_ReturnsTrue() throws Exception {
-        FakeExtensionManager manager=new FakeExtensionManager();
-        manager.WillBeValid=true;
+        FakeExtensionManager manager = new FakeExtensionManager();
+        manager.WillBeValid = true;
         assertTrue(manager.isValid("obojetnieCo.sdf"));
         FactoryClass.setManager(manager);
-        PrzyPomocyFabryki log=new PrzyPomocyFabryki();
+        PrzyPomocyFabryki log = new PrzyPomocyFabryki();
         assertTrue(log.isValidLogFileName("dafkl.fad"));
     }
 }

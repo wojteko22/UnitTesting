@@ -6,11 +6,11 @@ package examples.szwy;
 public class PrzyPomocyFabryki {
     private IExtensionManager menager;
 
-    public PrzyPomocyFabryki(){
-        menager=FactoryClass.create();
+    public PrzyPomocyFabryki() {
+        menager = FactoryClass.create();
     }
 
-    public boolean isValidLogFileName(String fileName){
+    public boolean isValidLogFileName(String fileName) {
         return menager.isValid(fileName);
     }
 }

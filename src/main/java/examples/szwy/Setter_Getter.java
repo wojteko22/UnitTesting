@@ -3,14 +3,14 @@ package examples.szwy;
 /**
  * Created by Dawid on 2016-06-08.
  */
-public class Seter_Geter {
+public class Setter_Getter {
     private IExtensionManager menager;
 
-    public Seter_Geter(){
-        menager=new FileExtensionManager();
+    public Setter_Getter() {
+        menager = new FileExtensionManager();
     }
 
-    public boolean isValidLogFileName(String fileName){
+    public boolean isValidLogFileName(String fileName) {
         return menager.isValid(fileName);
     }
 

@@ -8,14 +8,14 @@ import static org.junit.Assert.*;
 /**
  * @author Dawid on 2016-06-08.
  */
-public class Seter_GeterTest {
+public class SetterGetterTest {
 
     @Test
     public void testIsValidLogFileName() throws Exception {
-        FakeExtensionManager myFakeManager=new FakeExtensionManager();
-        myFakeManager.WillBeValid=true;
-        Seter_Geter log=new Seter_Geter();
+        FakeExtensionManager myFakeManager = new FakeExtensionManager();
+        myFakeManager.WillBeValid = true;
+        Setter_Getter log = new Setter_Getter();
         log.setMenager(myFakeManager);
-        assertThat(log.isValidLogFileName("nibyMaBycDobre.ese"),is(true));
+        assertThat(log.isValidLogFileName("nibyMaBycDobre.ese"), is(true));
     }
 }
