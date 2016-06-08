@@ -16,7 +16,7 @@ class LogAnalyzer5 {
         this.minNameLength = minNameLength;
     }
 
-    void analyze(String fileName) {
+    void analyze(String fileName) throws Exception {
         if(fileName.length() < minNameLength) {
             logger.logError("The file name is too short: " + fileName);
         }

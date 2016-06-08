@@ -1,5 +1,5 @@
 package examples.mockito;
 
 interface IWebService {
-    void write(String message) throws Exception;
+    void write(Object message) throws Exception;
 }

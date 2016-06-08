@@ -5,5 +5,5 @@ package examples.mockito;
  *         created on 08.06.2016 r.
  */
 interface IFileNameRules {
-    boolean isValidLogFileName(String fileName);
+    boolean isValidLogFileName(String fileName) throws Exception;
 }
