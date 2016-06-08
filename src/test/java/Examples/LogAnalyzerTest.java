@@ -8,9 +8,9 @@ import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
 import java.util.Collection;
-// TODO: 08.06.2016 Zmienić ten template. 
+
 /**
- * Created by Dawid on 2016-06-07.
+ * Created by Dawid on 2016-06-07
  */
 @RunWith(Parameterized.class)
 public class LogAnalyzerTest {
@@ -22,7 +22,7 @@ public class LogAnalyzerTest {
 
     @Parameters
     public static Collection<Object[]> data(){
-        Object[][] data=new Object[][]{{"dahaha.ssi",false},{"froog.foo",false},{"goodfile.slf",true}};
+        Object[][] data=new Object[][]{{"dahahaha.ssi",false},{"froog.foo",false},{"goodfile.slf",true}};
         return Arrays.asList(data);
     }
 
