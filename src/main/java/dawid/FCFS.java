@@ -3,7 +3,7 @@ package dawid;
 import java.util.PriorityQueue;
 
 /**
- * Created by Dawid on 2016-03-09.
+ * @author Dawid on 2016-03-09.
  */
 
 class FCFS extends SchedulingAlgorithms {

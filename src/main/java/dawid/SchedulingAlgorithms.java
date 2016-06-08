@@ -3,7 +3,7 @@ package dawid;
 import java.util.PriorityQueue;
 
 /**
- * Created by Dawid on 2016-03-16.
+ * @author Dawid on 2016-03-16.
  */
 /*Klasa abstrakcyjna zawieracjaca wspolene dla symulacji pola i konstruktor*/
 abstract class SchedulingAlgorithms {

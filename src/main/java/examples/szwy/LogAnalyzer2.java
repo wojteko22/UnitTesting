@@ -9,5 +9,3 @@ public class LogAnalyzer2 {
         return manager.isValid(fileName);
     }
 }
-
-

@@ -14,9 +14,9 @@ class SetterInjection {
         return manager.isValid(fileName);
     }
 
-    public IExtensionManager getManager() {
-        return manager;
-    }
+//    public IExtensionManager getManager() {
+//        return manager;
+//    }
 
     void setManager(IExtensionManager manager) {
         this.manager = manager;

@@ -3,7 +3,7 @@ package dawid;
 import java.util.Comparator;
 
 /**
- * Created by Dawid on 2016-03-10.
+ * @author Dawid on 2016-03-10.
  */
 class DurationComparator implements Comparator<Proces>{
     @Override

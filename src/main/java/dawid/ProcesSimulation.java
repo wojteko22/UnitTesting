@@ -3,7 +3,7 @@ package dawid;
 import java.util.PriorityQueue;
 
 /**
- * Created by Dawid on 2016-03-05.
+ * @author Dawid on 2016-03-05.
  */
 
 /*Klasa odpalajaca symulacje dla 20 kolejek z 50 procesami
