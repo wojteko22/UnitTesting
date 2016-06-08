@@ -15,7 +15,7 @@ class LogAnalyzer4 {
     void analyze(String fileName) {
         if (fileName.length() < 8) {
             try {
-                service.LogError("File name is too short: " + fileName);
+                service.logError("File name is too short: " + fileName);
             } catch (Exception e) {
                 email.sendEmail("someone@somewhere.com", "Brak mozliwosci rejestracji", e.getMessage());
             }
