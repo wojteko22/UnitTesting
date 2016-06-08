@@ -89,4 +89,24 @@ class Proces implements Comparable<Proces>, Cloneable {
         return result==0?id.compareTo(o.getId()):result;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Proces proces = (Proces) o;
+
+        return length == proces.length && preparTime == proces.preparTime && (id != null ? id.equals(proces.id) : proces.id == null && (duration != null ? duration.equals(proces.duration) : proces.duration == null && (readyTime != null ? readyTime.equals(proces.readyTime) : proces.readyTime == null)));
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + length;
+        result = 31 * result + preparTime;
+        result = 31 * result + (duration != null ? duration.hashCode() : 0);
+        result = 31 * result + (readyTime != null ? readyTime.hashCode() : 0);
+        return result;
+    }
 }

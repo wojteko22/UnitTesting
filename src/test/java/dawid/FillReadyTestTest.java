@@ -10,16 +10,12 @@ import java.util.PriorityQueue;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.isNotNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.when;
 
 /**
  * @author Dawid on 2016-06-08.
  */
 @RunWith(Parameterized.class)
-public class FCFSTest {
+public class FillReadyTestTest {
     @Parameterized.Parameter
     public Proces p1;
     @Parameterized.Parameter(value = 1)
@@ -34,17 +30,28 @@ public class FCFSTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         Object[][] data = new Object[][]{
-                {new Proces(0, 8), new Proces(2, 5), new Proces(3, 3), new Proces(9, 4), 5.75},
-                {new Proces(0, 8), new Proces(9, 5), new Proces(9, 3), new Proces(9, 4), 3.25}
+                {new Proces(0, 8), new Proces(2, 5), new Proces(3, 3), new Proces(9, 4), 4.0},
+                {new Proces(0, 8), new Proces(1, 4), new Proces(2, 9), new Proces(3, 5), 6.5}
         };
         return Arrays.asList(data);
     }
 
     @Test
-    public void testSymulation() throws Exception {
+    public void testFillReady_Filling_ReadyEqualsQueue() throws Exception {
+        Collection<Proces> collection = Arrays.asList(p1, p2, p3, p4);
+        PriorityQueue<Proces> queue = new PriorityQueue<>();
+        queue.addAll(collection);
+
+        FillReadyTest algorithm = new FillReadyTest(queue);
+        algorithm.symulation();
+        assertArrayEquals(collection.toArray(),algorithm.result.toArray());
+    }
+
+    @Test
+    public void testSymulation_SymulationResult_ReturnEqualsResult() throws Exception{
         PriorityQueue<Proces> queue = new PriorityQueue<>();
         queue.addAll(Arrays.asList(p1, p2, p3, p4));
-        SchedulingAlgorithms algorithm = new FCFS(queue);
+        SchedulingAlgorithms algorithm = new SJFw(queue);
         assertThat(algorithm.symulation(), is(result));
     }
 }
