@@ -4,25 +4,25 @@ package examples;
  * @author Dawid on 2016-06-08.
  */
 class LogAnalyzer {
-    private boolean WasLastFileNameValid;
+    private boolean wasLastFileNameValid;
 
-    boolean IsValidLogFileName(String fileName) {
-        WasLastFileNameValid = false;
+    boolean isValidLogFileName(String fileName) {
+        wasLastFileNameValid = false;
         if (fileName == null || fileName.isEmpty()) {
             throw new IllegalArgumentException("nalezy podac nazwe pliku");
         }
         if (!fileName.toUpperCase().endsWith(".SLF")) {
             return false;
         }
-        WasLastFileNameValid = true;
+        wasLastFileNameValid = true;
         return true;
     }
 
     boolean isWasLastFileNameValid() {
-        return WasLastFileNameValid;
+        return wasLastFileNameValid;
     }
 
 //    public void setWasLastFileNameValid(boolean wasLastFileNameValid) {
-//        WasLastFileNameValid = wasLastFileNameValid;
+//        wasLastFileNameValid = wasLastFileNameValid;
 //    }
 }

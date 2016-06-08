@@ -29,7 +29,7 @@ public class LogAnalyzerTest {
     @Test()
     public void testIsValidLogFileName_WhenCalled_ChangesWasLastFileNameValid() throws Exception {
         LogAnalyzer la = new LogAnalyzer();
-        la.IsValidLogFileName(fileName);
+        la.isValidLogFileName(fileName);
         Assert.assertEquals(expected, la.isWasLastFileNameValid());
     }
 }

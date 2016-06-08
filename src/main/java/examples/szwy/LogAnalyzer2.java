@@ -5,8 +5,8 @@ package examples.szwy;
  */
 public class LogAnalyzer2 {
     public boolean isValidLogFileName(String fileName) {
-        IExtensionManager menager = new FileExtensionManager();
-        return menager.isValid(fileName);
+        IExtensionManager manager = new FileExtensionManager();
+        return manager.isValid(fileName);
     }
 }
 
