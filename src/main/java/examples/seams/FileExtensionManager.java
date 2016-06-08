@@ -1,11 +1,11 @@
-package examples.szwy;
+package examples.seams;
 
 import java.util.Random;
 
 /**
  * @author Dawid on 2016-06-08.
  */
-class FileExtensionManager implements IExtensionManager {
+public class FileExtensionManager implements IExtensionManager {
     @Override
     public boolean isValid(String fileName) {
         // Sprawdza na podstawie jakiegos zewnetrznego pliku poprawnosc,

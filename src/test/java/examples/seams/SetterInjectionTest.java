@@ -1,4 +1,4 @@
-package examples.szwy;
+package examples.seams;
 
 import org.junit.Test;
 
