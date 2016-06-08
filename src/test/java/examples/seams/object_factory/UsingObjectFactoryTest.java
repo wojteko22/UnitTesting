@@ -1,5 +1,6 @@
-package examples.seams;
+package examples.seams.object_factory;
 
+import examples.seams.FakeExtensionManager;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

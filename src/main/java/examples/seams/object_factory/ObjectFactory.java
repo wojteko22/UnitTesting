@@ -1,4 +1,7 @@
-package examples.seams;
+package examples.seams.object_factory;
+
+import examples.seams.FileExtensionManager;
+import examples.seams.IExtensionManager;
 
 /**
  * @author Dawid on 2016-06-08.
