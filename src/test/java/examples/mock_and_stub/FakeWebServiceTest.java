@@ -1,4 +1,4 @@
-package examples.mock;
+package examples.mock_and_stub;
 
 import org.junit.Test;
 
