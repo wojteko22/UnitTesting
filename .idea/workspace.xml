@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25422ebe-fa34-49bb-8e0d-584d1b225f89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/examples/szwy/FactoryClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/examples/szwy/PrzyPomocyFabryki.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/examples/szwy/PrzyPomocyFabrykiTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="unit-testing.iws" />
@@ -1291,7 +1288,7 @@
       <updated>1465320618422</updated>
       <workItem from="1465320622831" duration="148000" />
       <workItem from="1465321299311" duration="2064000" />
-      <workItem from="1465324418904" duration="15279000" />
+      <workItem from="1465324418904" duration="15293000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1465321479198</created>
@@ -1353,7 +1350,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465370732342</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pierwszy test">
+      <created>1465372416168</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1465372416168</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1389,7 +1392,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17491000" />
+    <option name="totallyTimeSpent" value="17505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="735" extended-state="0" />
