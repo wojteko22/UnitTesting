@@ -1,4 +1,4 @@
-package Examples;
+package examples;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,10 +9,8 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.*;
-
 /**
- * Created by Dawid on 2016-06-07.
+ * Created by Dawid on 2016-06-07
  */
 @RunWith(Parameterized.class)
 public class LogAnalyzerTest {
@@ -24,7 +22,7 @@ public class LogAnalyzerTest {
 
     @Parameters
     public static Collection<Object[]> data(){
-        Object[][] data=new Object[][]{{"dahaha.ssi",false},{"froog.foo",false},{"goodfile.slf",true}};
+        Object[][] data=new Object[][]{{"dahahaha.ssi",false},{"froog.foo",false},{"goodfile.slf",true}};
         return Arrays.asList(data);
     }
 
