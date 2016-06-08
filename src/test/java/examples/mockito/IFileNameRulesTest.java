@@ -16,7 +16,7 @@ import static org.mockito.Mockito.when;
  */
 public class IFileNameRulesTest {
     @Test
-    public void Returns_ByDefault_WorksForHardCodedArgument() {
+    public void Returns_ByDefault_WorksForHardCodedArgument() throws Exception {
         IFileNameRules fakeRules = mock(IFileNameRules.class);
         when(fakeRules.isValidLogFileName("strict.txt")).thenReturn(true);
 
@@ -26,7 +26,7 @@ public class IFileNameRulesTest {
     }
 
     @Test
-    public void Returns_ByDefault_WorksForHardCodedArgument2() {
+    public void Returns_ByDefault_WorksForHardCodedArgument2() throws Exception {
         IFileNameRules fakeRules = mock(IFileNameRules.class);
         when(fakeRules.isValidLogFileName(anyString())).thenReturn(true);
 

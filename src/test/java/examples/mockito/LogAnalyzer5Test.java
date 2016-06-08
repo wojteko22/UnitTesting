@@ -12,7 +12,7 @@ import static org.mockito.Mockito.verify;
 public class LogAnalyzer5Test {
 
     @Test
-    public void analyze_TooShortFileName_CallLogger() {
+    public void analyze_TooShortFileName_CallLogger() throws Exception {
         ILogger mockedLogger = mock(ILogger.class);
         LogAnalyzer5 analyzer = new LogAnalyzer5(mockedLogger);
         analyzer.setMinNameLength(6);

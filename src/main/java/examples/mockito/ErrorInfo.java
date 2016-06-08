@@ -5,6 +5,19 @@ package examples.mockito;
  *         created on 08.06.2016 r.
  */
 class ErrorInfo {
-    int severity;
-    String message;
+    private int severity;
+    private String message;
+
+    ErrorInfo(int severity, String message) {
+        this.severity = severity;
+        this.message = message;
+    }
+
+    int getSeverity() {
+        return severity;
+    }
+
+    String getMessage() {
+        return message;
+    }
 }

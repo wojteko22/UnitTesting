@@ -5,5 +5,5 @@ package examples.mockito;
  *         created on 08.06.2016 r.
  */
 interface ILogger {
-    void logError(String message);
+    void logError(String message) throws Exception;
 }
