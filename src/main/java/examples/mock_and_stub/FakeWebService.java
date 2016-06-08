@@ -1,4 +1,4 @@
-package examples.mock;
+package examples.mock_and_stub;
 
 /**
  * @author Dawid on 2016-06-08.
@@ -8,7 +8,7 @@ class FakeWebService implements IWebService {
 
     @Override
     public void LogError(String message) throws Exception {
-        if (toThrow!=null){
+        if (toThrow != null) {
             throw toThrow;
         }
     }
