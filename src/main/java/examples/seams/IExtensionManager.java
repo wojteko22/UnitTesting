@@ -1,8 +1,8 @@
-package examples.szwy;
+package examples.seams;
 
 /**
  * @author Dawid on 2016-06-08.
  */
-interface IExtensionManager {
+public interface IExtensionManager {
     boolean isValid(String fileName);
 }

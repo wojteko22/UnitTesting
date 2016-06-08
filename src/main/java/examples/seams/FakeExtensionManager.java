@@ -1,10 +1,10 @@
-package examples.szwy;
+package examples.seams;
 
 /**
  * @author Dawid on 2016-06-08.
  */
-class FakeExtensionManager implements IExtensionManager {
-    boolean willBeValid = false;
+public class FakeExtensionManager implements IExtensionManager {
+    public boolean willBeValid = false;
 
     @Override
     public boolean isValid(String fileName) {

@@ -1,7 +1,8 @@
-package examples.szwy;
+package examples.seams;
 
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
@@ -13,9 +14,11 @@ public class UsingObjectFactoryTest {
     public void testIsValidLogFileName_SupportedEstension_ReturnsTrue() throws Exception {
         FakeExtensionManager manager = new FakeExtensionManager();
         manager.willBeValid = true;
-        assertTrue(manager.isValid("obojetnieCo.sdf"));
         ObjectFactory.setManager(manager);
         UsingObjectFactory log = new UsingObjectFactory();
-        assertTrue(log.isValidLogFileName("dafkl.fad"));
+
+        boolean result = log.isValidLogFileName("dafkl.fad");
+
+        assertThat(result, is(true));
     }
 }
