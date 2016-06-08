@@ -8,7 +8,7 @@ class FakeWebService implements IWebService {
 
     @Override
     public void LogError(String message) throws Exception {
-        if (toThrow!=null){
+        if (toThrow != null) {
             throw toThrow;
         }
     }
