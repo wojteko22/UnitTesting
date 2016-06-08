@@ -1,28 +1,28 @@
 package examples;
 
 /**
- * Created by Dawid on 2016-06-07.
+ * @author Dawid on 2016-06-08.
  */
-public class LogAnalyzer {
+class LogAnalyzer {
     private boolean WasLastFileNameValid;
 
-    public boolean IsValidLogFileName(String fileName){
-        WasLastFileNameValid=false;
-        if (fileName==null || fileName.isEmpty()){
+    boolean IsValidLogFileName(String fileName) {
+        WasLastFileNameValid = false;
+        if (fileName == null || fileName.isEmpty()) {
             throw new IllegalArgumentException("nalezy podac nazwe pliku");
         }
-        if (!fileName.toUpperCase().endsWith(".SLF")){
+        if (!fileName.toUpperCase().endsWith(".SLF")) {
             return false;
         }
-        WasLastFileNameValid=true;
+        WasLastFileNameValid = true;
         return true;
     }
 
-    public boolean isWasLastFileNameValid() {
+    boolean isWasLastFileNameValid() {
         return WasLastFileNameValid;
     }
 
-    public void setWasLastFileNameValid(boolean wasLastFileNameValid) {
-        WasLastFileNameValid = wasLastFileNameValid;
-    }
+//    public void setWasLastFileNameValid(boolean wasLastFileNameValid) {
+//        WasLastFileNameValid = wasLastFileNameValid;
+//    }
 }
