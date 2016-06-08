@@ -13,14 +13,14 @@ class FCFS extends SchedulingAlgorithms {
     }
 
     @Override
-    public double symulation(){
+    public double symulation() {
 
-        while (!queue.isEmpty()){
-            if (sumaryTime<queue.peek().getPrepering())
-                sumaryTime=queue.peek().getPrepering();
-            averageWaitingTime+=(sumaryTime-queue.peek().getPrepering());
-            sumaryTime+=queue.poll().getLength();
+        while (!queue.isEmpty()) {
+            if (sumaryTime < queue.peek().getPrepering())
+                sumaryTime = queue.peek().getPrepering();
+            averageWaitingTime += (sumaryTime - queue.peek().getPrepering());
+            sumaryTime += queue.poll().getLength();
         }
-        return averageWaitingTime/queueSize;
+        return averageWaitingTime / queueSize;
     }
 }
