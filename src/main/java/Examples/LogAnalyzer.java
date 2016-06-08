@@ -1,4 +1,4 @@
-package Examples;
+package examples;
 
 /**
  * Created by Dawid on 2016-06-07.
