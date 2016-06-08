@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25422ebe-fa34-49bb-8e0d-584d1b225f89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/unit-testing.iml" afterPath="$PROJECT_DIR$/.idea/modules/unit-testing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/FactoryClass.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/FakeExtensionManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/FileExtensionManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/IExtensionManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/LogAnalyzer2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/PrzyPomocyFabryki.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/Seter_Geter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/main/examples/szwy/WKonstruktorze.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/test/examples/szwy/PrzyPomocyFabrykiTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/test/examples/szwy/Seter_GeterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/classes/test/examples/szwy/WKonstruktorzeTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/examples/LogAnalyzerTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/examples/szwy/PrzyPomocyFabrykiTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/examples/szwy/Seter_GeterTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/examples/szwy/WKonstruktorzeTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/wojtek/FCFSTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/wojtek/RRTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/wojtek/SJF2Test.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/test/unit-testing/wojtek/SJFTest.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="unit-testing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +74,9 @@
       <file leaf-file-name="LogAnalyzerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/examples/LogAnalyzerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47258484">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.16145833">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,10 +87,10 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1465374242144" expanded="true" signature="97527:97544" placeholder="..." />
-                <marker date="1465374242144" expanded="true" signature="97527:97562" placeholder="..." />
-                <marker date="1465374242144" expanded="true" signature="97527:97575" placeholder="..." />
-                <marker date="1465374242144" expanded="true" signature="97527:97590" placeholder="..." />
+                <marker date="1465374316783" expanded="true" signature="97469:97486" placeholder="..." />
+                <marker date="1465374316783" expanded="true" signature="97469:97504" placeholder="..." />
+                <marker date="1465374316783" expanded="true" signature="97469:97517" placeholder="..." />
+                <marker date="1465374316783" expanded="true" signature="97469:97532" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1217,7 +1233,7 @@
       <workItem from="1465321299311" duration="2064000" />
       <workItem from="1465324418904" duration="16116000" />
       <workItem from="1465373408705" duration="702000" />
-      <workItem from="1465374162435" duration="138000" />
+      <workItem from="1465374162435" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1465321479198</created>
@@ -1297,7 +1313,13 @@
       <option name="project" value="LOCAL" />
       <updated>1465373494931</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="pierwszy test">
+      <created>1465374312664</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1465374312664</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1333,20 +1355,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19168000" />
+    <option name="totallyTimeSpent" value="19338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14353313" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4680851" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26841244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1413,9 +1435,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,10 +1444,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1465374242144" expanded="true" signature="97527:97544" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97562" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97575" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97590" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97486" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97504" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97517" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97532" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1583,10 +1603,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1465374242144" expanded="true" signature="97527:97544" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97562" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97575" placeholder="..." />
-            <marker date="1465374242144" expanded="true" signature="97527:97590" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97486" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97504" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97517" placeholder="..." />
+            <marker date="1465374316783" expanded="true" signature="97469:97532" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1642,11 +1662,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/examples/LogAnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47258484">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.16145833">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
