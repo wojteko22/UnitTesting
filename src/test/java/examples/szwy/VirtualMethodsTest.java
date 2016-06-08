@@ -12,7 +12,7 @@ public class VirtualMethodsTest {
     @Test
     public void testIsVirtualLogFileName() throws Exception {
         FakeExtensionManager stub = new FakeExtensionManager();
-        stub.WillBeValid=true;
+        stub.willBeValid=true;
         TestVirtual log = new TestVirtual(stub);
         assertTrue(log.isValidLogFileName("file.esa"));
     }
