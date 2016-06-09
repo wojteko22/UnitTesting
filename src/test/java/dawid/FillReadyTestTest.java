@@ -47,11 +47,11 @@ public class FillReadyTestTest {
         assertArrayEquals(collection.toArray(),algorithm.result.toArray());
     }
 
-    @Test
-    public void testSymulation_SymulationResult_ReturnEqualsResult() throws Exception{
-        PriorityQueue<Proces> queue = new PriorityQueue<>();
-        queue.addAll(Arrays.asList(p1, p2, p3, p4));
-        SchedulingAlgorithms algorithm = new SJFw(queue);
-        assertThat(algorithm.symulation(), is(result));
-    }
+//    @Test
+//    public void testSymulation_SymulationResult_ReturnEqualsResult() throws Exception{
+//        PriorityQueue<Proces> queue = new PriorityQueue<>();
+//        queue.addAll(Arrays.asList(p1, p2, p3, p4));
+//        SchedulingAlgorithms algorithm = new SJFw(queue);
+//        assertThat(algorithm.symulation(), is(result));
+//    }
 }
