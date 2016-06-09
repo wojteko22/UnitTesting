@@ -16,7 +16,9 @@ public class LogAnalyzer5Test {
         ILogger mockedLogger = mock(ILogger.class);
         LogAnalyzer5 analyzer = new LogAnalyzer5(mockedLogger);
         analyzer.setMinNameLength(6);
+
         analyzer.analyze("a.txt");
+
         verify(mockedLogger).logError("The file name is too short: a.txt");
     }
 }
