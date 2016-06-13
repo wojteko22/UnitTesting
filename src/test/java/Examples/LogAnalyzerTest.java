@@ -16,7 +16,7 @@ import static org.junit.Assert.assertThat;
  */
 @RunWith(Parameterized.class)
 public class LogAnalyzerTest {
-    @Parameterized.Parameter
+    @Parameterized.Parameter(value = 0)
     public String fileName;
     @Parameterized.Parameter(value = 1)
     public boolean expected;
@@ -28,10 +28,10 @@ public class LogAnalyzerTest {
     }
 
     @Test()
-    public void testIsValidLogFileName_WhenCalled_ChangesWasLastFileNameValid() throws Exception {
+    public void isValidLogFileName_WhenCalled_ChangesWasLastFileNameValid() throws Exception {
         LogAnalyzer la = new LogAnalyzer();
-        la.isValidLogFileName(fileName);
 
+        la.isValidLogFileName(fileName);
         boolean result = la.getWasLastFileNameValid();
 
         assertThat(result, is(expected));

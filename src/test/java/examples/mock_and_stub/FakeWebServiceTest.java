@@ -12,10 +12,10 @@ public class FakeWebServiceTest {
 
     @Test
     public void analyze_WebServiceThrows_SendEmail() {
-        FakeWebService subService = new FakeWebService();
-        subService.toThrow = new Exception("Fake exception");
+        FakeWebService stubService = new FakeWebService();
+        stubService.toThrow = new Exception("Fake exception");
         FakeEmailService mockEmail = new FakeEmailService();
-        LogAnalyzer4 log = new LogAnalyzer4(subService, mockEmail);
+        LogAnalyzer4 log = new LogAnalyzer4(stubService, mockEmail);
         String shortFileName = "abc.ext";
 
         log.analyze(shortFileName);

@@ -21,8 +21,4 @@ class LogAnalyzer {
     boolean getWasLastFileNameValid() {
         return wasLastFileNameValid;
     }
-
-//    public void setWasLastFileNameValid(boolean wasLastFileNameValid) {
-//        wasLastFileNameValid = wasLastFileNameValid;
-//    }
 }
